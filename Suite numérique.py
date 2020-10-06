@@ -13,3 +13,14 @@ for k in range(1,11):
     d = a + b - k
 print("C = " , c , " et D = " , d )
 
+u = 500
+k = 0
+while(u< 2000):
+    u = u * 1.03 + 100
+    k = k + 1
+print (k)
+
+a = 0
+for k in range(1,101):
+    a += k
+print(a)
