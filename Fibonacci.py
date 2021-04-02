@@ -12,3 +12,15 @@ def Fibonnaci(x):
 fib = Fibonnaci(100000)
 
 print(fib)
+
+#En php
+# function fibonacci($n)
+# {
+#     $sequence = [0, 1];
+
+#     for ($i = 2; $i < $n; $i++) {
+#         $sequence[$i] = $sequence[$i-1] + $sequence[$i-2];
+#     }
+
+#     return $sequence;
+# }

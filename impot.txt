@@ -1,0 +1,36 @@
+question 1:
+    impot = tableau
+    somme, reste, k, a = int
+    taux, tranche = liste
+    
+
+Fonction impot(somme : int; taux : liste; tranche : liste) : retourne liste
+Début
+    impot <- [0; 0; 0; 0]
+    reste <- somme
+    k <- 0
+
+    Tant que (reste > 0) Faire
+        a <- minimum entre (tranche[k + 1] - tranche[k]) et reste
+        impot[k] <- a * taux[k] / 100
+        reste <- somme - tranche
+        k <- k + 1
+    FinFaire
+
+    retourne impot
+Fin
+
+Fonction Somme(listeDeNombre : list) : retourne int
+Début
+    result <- 0
+    Pour (i allant de 0 à listeDeNombre.Taille) Faire
+        result += listeDeNombre[i]
+    FinFaire
+    retourne result
+Fin
+
+Fonction pourcent(nombre1 : int, nombre2 : int) : retourne double
+Début
+    retourne nombre2 / nombre1 * 100
+Fin
+
